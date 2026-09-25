@@ -1,0 +1,392 @@
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f7f7f7;
+color:#111;
+padding:50px;
+}
+
+.grid{
+max-width:1120px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1.5fr 1fr;
+gap:30px;
+}
+
+.card{
+border-radius:12px;
+padding:32px;
+}
+
+h1,h2{
+line-height:.95;
+}
+
+.create{
+background:#fff0e4;
+min-height:320px;
+}
+
+.create h2{
+font-size:38px;
+}
+
+i{
+color:#7650dc;
+}
+
+button{
+border:0;
+background:#ffd166;
+color:#7650dc;
+border-radius:30px;
+padding:15px 25px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+margin-top:35px;
+}
+
+.hero{
+background:#7650dc;
+color:white;
+text-align:center;
+min-height:320px;
+}
+
+.hero h1{
+font-size:52px;
+}
+
+.hero span,
+.stars{
+color:#ffd166;
+}
+
+.hero .stars{
+font-size:28px;
+margin:30px 0 10px;
+}
+
+.schedule{
+background:#ddd2ff;
+grid-row:span 2;
+}
+
+.schedule h2{
+font-size:32px;
+}
+
+.chart{
+background:white;
+border-radius:20px;
+padding:22px;
+margin-top:30px;
+}
+
+.chart hr{
+border:0;
+border-top:1px solid #ddd;
+margin:15px 0;
+}
+
+.days{
+display:flex;
+justify-content:space-between;
+color:#999;
+font-size:13px;
+}
+
+.days span:first-child{
+background:#ffe1e8;
+color:#e95d7b;
+padding:6px 9px;
+border-radius:10px;
+}
+
+.chart small{
+display:block;
+width:max-content;
+margin:18px auto 5px;
+background:#d8f9e5;
+color:#269c61;
+padding:6px 10px;
+border-radius:8px;
+}
+
+.bars{
+height:150px;
+display:flex;
+justify-content:space-around;
+align-items:end;
+}
+
+.bars i{
+width:17px;
+background:#7650dc;
+border-radius:10px;
+height:55px;
+}
+
+.bars i:nth-child(2){
+height:80px;
+}
+
+.bars i:nth-child(3){
+height:125px;
+}
+
+.bars i:nth-child(4){
+height:100px;
+}
+
+.bars i:nth-child(5){
+height:65px;
+}
+
+.bars i:nth-child(6){
+height:90px;
+}
+
+.times{
+color:#888;
+font-size:11px;
+margin-top:8px;
+}
+
+.schedule>p{
+margin-top:25px;
+font-size:16px;
+}
+
+.accounts{
+background:white;
+min-height:250px;
+}
+
+.account{
+display:inline-flex;
+align-items:center;
+gap:8px;
+background:#fafafa;
+padding:10px;
+border-radius:30px;
+margin-right:5px;
+}
+
+.account strong{
+background:#ffd166;
+color:#7650dc;
+padding:8px;
+border-radius:50%;
+}
+
+.account small{
+color:#999;
+}
+
+.accounts h2{
+margin-top:30px;
+font-size:30px;
+}
+
+.posting{
+background:#ffd166;
+min-height:250px;
+}
+
+.posting h2{
+font-size:32px;
+}
+
+.calendar{
+background:white;
+margin-top:20px;
+border-radius:10px;
+overflow:hidden;
+}
+
+.calendar header{
+background:#7650dc;
+color:white;
+padding:12px;
+}
+
+.calendar header span{
+float:right;
+}
+
+.checks{
+color:#7650dc;
+padding:15px;
+}
+
+.boxes{
+color:#ffd166;
+padding:10px 15px;
+}
+
+.audience{
+background:white;
+min-height:240px;
+}
+
+.audience h1{
+font-size:55px;
+}
+
+.audience p{
+margin:20px 0;
+font-size:18px;
+}
+
+.people{
+font-size:28px;
+}
+
+.growth{
+background:#7650dc;
+color:white;
+display:flex;
+align-items:center;
+gap:30px;
+min-height:250px;
+}
+
+.growth>h2{
+font-size:35px;
+}
+
+.growthbox{
+background:white;
+color:#111;
+padding:22px;
+border-radius:15px;
+min-width:220px;
+}
+
+.growthbox h2{
+font-size:28px;
+margin-top:8px;
+}
+
+.growthbars{
+color:#7650dc;
+font-size:35px;
+margin:12px 0;
+}
+
+.growthbox span{
+background:#ddffe9;
+padding:5px;
+border-radius:8px;
+font-size:12px;
+}
+
+.ai{
+background:#ffd166;
+min-height:400px;
+}
+
+.ai h2{
+font-size:35px;
+}
+
+.chat{
+background:white;
+padding:18px;
+border-radius:20px;
+margin-top:30px;
+max-width:280px;
+}
+
+.chat p{
+background:#fff0f3;
+padding:13px;
+border-radius:15px;
+margin-bottom:10px;
+font-size:13px;
+}
+
+.chat p:nth-child(2){
+background:#fff0d0;
+}
+
+.chat button{
+margin:0;
+font-size:22px;
+padding:10px 18px;
+}
+
+@media(max-width:800px){
+
+body{
+padding:12px;
+}
+
+.grid{
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.hero{
+order:1;
+}
+
+.accounts{
+order:2;
+}
+
+.posting{
+order:3;
+}
+
+.schedule{
+order:4;
+}
+
+.growth{
+order:5;
+}
+
+.audience{
+order:6;
+}
+
+.create{
+order:7;
+}
+
+.ai{
+order:8;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.create h2,
+.ai h2,
+.posting h2{
+font-size:30px;
+}
+
+.schedule{
+grid-row:auto;
+}
+
+.growth{
+display:block;
+}
+
+.growth>h2{
+margin-top:25px;
+}
+
+}
